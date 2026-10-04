@@ -171,8 +171,8 @@ after inserting many objects Ex. 5000 , call
 before continue working on same DbContext to avoid memory leak
 
 ## Enable MultipleActiveResultSets
-adding `MultipleActiveResultSets=True;` to connection string enables multiple queries at same connection 
+adding `MultipleActiveResultSets=True;` to connection string enables multiple queries at same connection which means :
 + enhanced `SplitQuery` perfrmance and prevent Buffering reuslt of first table before sending first table 
-+ reduce Connection Pool Exhaustion , as single operation breviously required many connections 
++ reduce Connection Pool Exhaustion , as single operation previously required many connections 
 
 
